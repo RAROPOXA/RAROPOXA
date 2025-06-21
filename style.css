@@ -1,21 +1,21 @@
-/* Reset de base */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corps général */
+/* Police et fond */
 body {
   background-color: #121212;
-  color: #e0e0e0;
+  color: #f0f0f0;
   font-family: 'Orbitron', sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* Navigation */
 nav {
-  background-color: #1f1f1f;
+  background-color: #1c1c1c;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -24,21 +24,55 @@ nav {
 }
 
 .logo {
-  font-size: 1.5rem;
   color: #00ffc8;
+  font-size: 1.5rem;
   text-shadow: 0 0 5px #00ffc8;
 }
 
 .menu a {
-  color: #e0e0e0;
-  text-decoration: none;
+  color: #f0f0f0;
   margin-left: 20px;
+  text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .menu a:hover {
   color: #00ffc8;
+}
+
+/* Héros */
+.hero {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #00ffc8;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffc8;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #00ffc8;
+  color: #121212;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 /* Section principale */
@@ -48,26 +82,14 @@ nav {
   padding: 0 20px;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #00ffc8;
-  text-shadow: 0 0 5px #00ffc8;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
-
 /* Cartes de jeu */
 .game-card {
-  background: #1e1e1e;
+  background-color: #1e1e1e;
   border: 2px solid #00ffc8;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 25px;
-  box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -78,22 +100,4 @@ p {
 
 .game-card:hover {
   transform: translateY(-5px);
-}
-
-/* Boutons */
-button {
-  background-color: #00ffc8;
-  color: #121212;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-family: 'Orbitron', sans-serif;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #00e2b8;
-  transform: scale(1.05);
 }
